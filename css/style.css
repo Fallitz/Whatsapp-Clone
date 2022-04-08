@@ -17,19 +17,19 @@ body{
 }
 
 .container{
+    display: flex;
     position: relative;
-    width: 1396px;
+    width: 1360px;
     max-width: 100%;
     height: calc(100vh - 38px);
     background: #fff;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06),0 2px 5px 0 rgba(0,0,0,0.06);
-    display: flex;
 }
 
 .container .leftSider{
     position: relative;
     flex: 30%;
-    background: #fff;    
+    background: #111b21;    
     border-right: 1px solid rgba(0,0,0,0.2);
 }
 
@@ -38,3 +38,73 @@ body{
     flex: 70%;
     background: #e5ddd5;
 }
+
+/*Whatsapp*/
+.container .leftSider .leftSider-header{
+    display: flex;
+    position: relative;
+    height: 59px;
+    background: #202c33;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    align-items: center;
+}
+.leftSider-profile{
+    display: flex;
+    position: relative;
+    height: 39px;
+    width: 39px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.iconStorys{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+    width: 100%;
+}
+.espacoIcones{
+    width: 20px;
+}
+.leftSider-body-search{
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: 10%;
+    justify-content: center;
+    align-items: center;
+}
+::placeholder {
+    color: rgb(182, 166, 166);
+    opacity: 1;
+  }
+.leftSider-search{
+    position: relative;
+    width: 95%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background: #202c33;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+.leftSider-body-chats{
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: 90%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+@media only screen and (min-width: 1450px) {
+    .container{
+        width: 1538px;
+    }
+}
+ 
